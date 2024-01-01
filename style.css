@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    background-color: #a87e62;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    position: absolute;
+    max-width: 98.69605vw;
+    width: 100%;
+    margin: 10px 0;
+    align-self: center;
+    font-size: 64px;
+    text-shadow: 6.5px 6.5px 5px black;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.pyramid {
+    position: relative;
+    left: 25px;
+    top: 17.5px;
+    width: 125px;
+    height: 125px;
+    transform-style: preserve-3d;
+    transform: rotateY(326deg) rotateX(2deg) rotateZ(359deg);
+}
+
+.side {
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 45px solid transparent;
+    border-bottom: 90px solid yellow;
+    border-top: 0px;
+    z-index: 0;
+}
+
+.one {
+    transform: rotateX(30deg);
+    transform-origin: 0 0;
+}
+
+.three {
+    transform-origin: 45px 0;
+    transform: rotateY(270deg) rotateX(-30deg);
+    border-bottom-color: orange;
+}
+
+.pyramid-text {
+    position: absolute;
+    z-index: 2;
+    color: black;
+    left: 14px;
+    animation: text-color 2s ease-in-out infinite alternate;
+    text-shadow: gray 1.5px 1.5px;
+}
+
+nav {
+    background-color: #b07154;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: lightgray;
+}
+
+main {
+    height: 145vh;
+}
+
+iframe {
+    width: 100%;
+    height: 125%;
+    border: none;
+    z-index: -1;
+    overflow: scroll;
+}
+
+footer {
+    background-color: #3a2317;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.external > a {
+    color: yellow;
+}
+
+.external > a:hover {
+    color: orange;
+}
+
+@keyframes text-color {
+    from { 
+        color: black;
+        text-shadow: gray 1.5px 1.5px;
+    }
+
+    to { 
+        color: lightgray; 
+        text-shadow: black 1.5px 1.5px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .logo {
+        top: 25px
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    main {
+        height: auto;
+    }
+
+    iframe {
+        height: 120vh;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    iframe {
+        height: 100%;
+    }
+}
