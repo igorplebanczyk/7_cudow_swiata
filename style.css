@@ -81,6 +81,7 @@ nav {
     background-color: #b07154;
     padding: 10px;
     text-align: center;
+    visibility: visible;
 }
 
 nav a {
@@ -153,6 +154,7 @@ footer {
 
     nav {
         flex-direction: column;
+        visibility: hidden;
     }
 
     nav a {
