@@ -12,6 +12,7 @@ img {
     padding: 4px;
     border: 4px double rgba(0, 0, 0, 0.75);
     height: auto;
+    box-shadow: black 4px 4px 20px;
 }
 
 .pokaz_slajdow {
