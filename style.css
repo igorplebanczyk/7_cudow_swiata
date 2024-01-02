@@ -141,7 +141,7 @@ footer {
 }
 
 nav#nav_mobile {
-    visibility: hidden;
+    display: none;
     position: absolute;
     height: 0;
     top: 20px;
@@ -303,7 +303,7 @@ nav#nav_mobile {
     }
 
     nav#nav_mobile {
-        visibility: visible;
+        display: block;
     }
 
     main {
